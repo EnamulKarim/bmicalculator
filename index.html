@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <style>
+        /* Set background image for form */
+form {
+  background-image: url("background.jpg");
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Style input fields and labels */
+label {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style calculate button */
+#calculateBtn {
+  background-color: #4285F4;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#calculateBtn:hover {
+  background-color: #3367D6;
+}
+
+/* Style result div */
+#result {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Add custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <form>
+      <label for="weightInput">Weight (kg):</label>
+      <input type="number" id="weightInput"><br>
+      <label for="heightInput">Height (m):</label>
+      <input type="number" id="heightInput"><br>
+      <button type="button" id="calculateBtn">Calculate BMI</button>
+    </form>
+    <div id="result"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
